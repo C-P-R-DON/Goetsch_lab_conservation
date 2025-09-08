@@ -1,4 +1,4 @@
-Current progress cosists of three files: blastp_ortholog_finder.py, align_and_tree_for_codeml.py, codeml.ctl
+Current progress cosists of four files: blastp_ortholog_finder.py, align_and_tree_for_codeml.py, codeml.ctl, column_scores.py
 
 blastp_ortholog_finder.py - Summary
 	Functionality
@@ -62,6 +62,32 @@ align_and_tree_for_codeml.py- Summary
 codeml.ctl-summary
 	Functionality -- serves as input file for codeml. Contains command to execute free ratio model, which estimates omega values for each branch 
 
+column_scores.py - Summary
+
+Functionality
+This script is designed to assess the conservation of amino acid positions across a set of related protein sequences. It automates the process of fetching sequences from NCBI, performing a multiple sequence alignment with MUSCLE, and then calculating a sum-of-pairs score for each column in the alignment. The score is based on the BLOSUM62 substitution matrix, where a higher score for a column indicates a more highly conserved position.
+
+	Input
+	The script requires the following command-line arguments:
+	
+	input_file: A required text file containing a list of NCBI protein accession numbers, with one accession per line.
+	
+	-o or --output: The desired name for the output alignment file (default: output.fasta).
+	
+	Note: The user must manually edit the script to provide two hardcoded values:
+	
+	A valid email address for NCBI Entrez queries.
+	
+	The correct file path to the MUSCLE executable on their local machine.
+	
+	Output
+	The script generates two forms of output:
+	
+	Console Output: A list of sum-of-pairs scores is printed directly to the terminal, with each line showing the column number and its calculated conservation score.
+	
+	Alignment File: A FASTA file containing the complete multiple sequence alignment. The filename defaults to output.fasta but can be specified with the --output argument.
+
+
 Dependencies
 	Dependencies List For blastp_ortholog_finder.py
 		Python Packages:
@@ -99,6 +125,19 @@ Dependencies
 				Add to system PATH or provide path via --codeml-path
 			NCBI Access: Valid email address (required)
 			Optional: NCBI API key (for higher request limits)
-
+	Dependencies List For column_scores.py
+		Python Packages:
+			argparse (standard library)
+			os (standard library)
+			sys (standard library)
+			subprocess (standard library)
+			tempfile (standard library)
+			BioPython (install with pip install biopython)
+			numpy (install with pip install numpy)
+		External Tools:
+			MUSCLE (for multiple sequence alignment)
+				Download from: https://www.drive5.com/muscle/downloads.htm
+				The path to the executable must be hardcoded into the script.
+			NCBI Access: A valid email address is required for Entrez queries and must be hardcoded into the script.
 	# Install all Python dependencies
 	pip install pandas biopython matplotlib
