@@ -1,8 +1,8 @@
 Current progress cosists of four files: blastp_ortholog_finder.py, align_and_tree_for_codeml.py, codeml.ctl, column_scores.py
 
 blastp_ortholog_finder.py - Summary
-	Functionality
-	This script is designed to find orthologous genes across different species using BLAST searches. It takes a seed gene (nucleotide sequence) as input, finds its protein sequence, and performs BLAST searches to identify orthologs in other species. When there are multiple hits per species, only the best hit is recorded in the output. The script can handle different types of BLAST searches (blastn, tblastn, blastp, blastx, tblastx) and can be configured to search within specific taxonomic groups.
+Functionality
+This script is designed to find orthologous genes across different species using BLAST searches. It takes a seed gene (nucleotide sequence) as input, finds its protein sequence, and performs BLAST searches to identify orthologs in other species. When there are multiple hits per species, only the best hit is recorded in the output. The script can handle different types of BLAST searches (blastn, tblastn, blastp, blastx, tblastx) and can be configured to search within specific taxonomic groups.
 
 	Input
 	The script requires the following command-line arguments:
@@ -29,8 +29,8 @@ blastp_ortholog_finder.py - Summary
 	The output filename follows the pattern: {seed_accession}_{seed_gene_name}_{phylum_tag}_{blast_type}_hits.tsv
 
 align_and_tree_for_codeml.py- Summary
-	Functionality
-	This script automates the process of creating codon-aligned sequences and performing phylogenetic analysis. It takes protein and nucleotide sequence accessions as input, performs multiple sequence alignment, and generates phylogenetic trees with dN/dS (ω) ratios. The workflow includes:
+Functionality
+This script automates the process of creating codon-aligned sequences and performing phylogenetic analysis. It takes protein and nucleotide sequence accessions as input, performs multiple sequence alignment, and generates phylogenetic trees with dN/dS (ω) ratios. The workflow includes:
 
 	Fetching protein and nucleotide sequences from NCBI
 	Performing multiple sequence alignment using MUSCLE
@@ -60,10 +60,9 @@ align_and_tree_for_codeml.py- Summary
 
 
 codeml.ctl-summary
-	Functionality -- serves as input file for codeml. Contains command to execute free ratio model, which estimates omega values for each branch 
+Functionality -- serves as input file for codeml. Contains command to execute free ratio model, which estimates omega values for each branch 
 
 column_scores.py - Summary
-
 Functionality
 This script is designed to assess the conservation of amino acid positions across a set of related protein sequences. It automates the process of fetching sequences from NCBI, performing a multiple sequence alignment with MUSCLE, and then calculating a sum-of-pairs score for each column in the alignment. The score is based on the BLOSUM62 substitution matrix, where a higher score for a column indicates a more highly conserved position.
 
