@@ -1,4 +1,4 @@
-The OrthoDNDS pipeline cosists of three files: blastp_ortholog_finder.py, align_and_tree_for_codeml.py, codeml.ctl
+Current progress cosists of three files: blastp_ortholog_finder.py, align_and_tree_for_codeml.py, codeml.ctl
 
 blastp_ortholog_finder.py - Summary
 	Functionality
