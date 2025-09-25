@@ -115,11 +115,11 @@
 	- MUSCLE (for multiple sequence alignment) Download from: https://www.drive5.com/muscle/downloads.htm
 	  Add to system PATH or provide path via --muscle-path
 	- pal2nal.pl (for codon alignment) Download from: http://www.bork.embl.de/pal2nal/
-			- Requires Perl to be installed
-			- Add to system PATH or provide path via --pal2nal-path
+		- Requires Perl to be installed
+		- Add to system PATH or provide path via --pal2nal-path
 	- PAML (for dN/dS calculation) Download from: http://abacus.gene.ucl.ac.uk/software/paml.html
-			- Specifically requires codeml executable
-			- Add to system PATH or provide path via --codeml-path
+		- Specifically requires codeml executable
+		- Add to system PATH or provide path via --codeml-path
 	- NCBI Access: Valid email address (required)
 	  	- Optional: NCBI API key (for higher request limits)
 **Dependencies List For column_scores.py**
@@ -133,6 +133,6 @@
 	- numpy (install with pip install numpy)
 - External Tools:
 	- MUSCLE (for multiple sequence alignment)
-			- Download from: https://www.drive5.com/muscle/downloads.htm
-			- The path to the executable must be hardcoded into the script.
+		- Download from: https://www.drive5.com/muscle/downloads.htm
+		- The path to the executable must be hardcoded into the script.
 	- NCBI Access: A valid email address is required for Entrez queries and must be hardcoded into the script.
