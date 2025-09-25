@@ -3,9 +3,7 @@
 ## blastp_ortholog_finder.py - Summary
 
 > Functionality: This script is designed to find orthologous genes across different species using BLAST searches. It takes a seed gene (nucleotide sequence) as input, finds its protein sequence, and performs BLAST searches to identify orthologs in other species. When there are multiple hits per species, only the best hit is recorded in the output. The script can handle different types of BLAST searches (blastn, tblastn, blastp, blastx, tblastx) and can be configured to search within specific taxonomic groups.
-
-	Input
-	The script requires the following command-line arguments:
+>Input: The script requires the following command-line arguments:
 
 	seed_accession: NCBI accession of the seed nucleotide sequence (e.g., NM_001301339)
 	seed_gene_name: Common name of the seed gene (e.g., BRCA1)
@@ -30,15 +28,13 @@
 
 ## align_and_tree_for_codeml.py- Summary
 > Functionality: This script automates the process of creating codon-aligned sequences and performing phylogenetic analysis. It takes protein and nucleotide sequence accessions as input, performs multiple sequence alignment, and generates phylogenetic trees with dN/dS (ω) ratios. The workflow includes:
-
-	Fetching protein and nucleotide sequences from NCBI
-	Performing multiple sequence alignment using MUSCLE
-	Creating codon-based alignments using pal2nal
-	Building phylogenetic trees
-	Calculating dN/dS ratios using PAML's codeml
-	Visualizing phylogenetic trees with branch-specific dN/dS values
-	Input
-	The script requires the following command-line arguments:
+- Fetching protein and nucleotide sequences from NCBI
+- Performing multiple sequence alignment using MUSCLE
+- Creating codon-based alignments using pal2nal
+- Building phylogenetic trees
+- Calculating dN/dS ratios using PAML's codeml
+- Visualizing phylogenetic trees with branch-specific dN/dS values
+> Input: The script requires the following command-line arguments:
 
 	Required:
 	--input: Input TSV file containing protein and nucleotide accessions
@@ -63,9 +59,7 @@
 
 ## column_scores.py - Summary
 > Functionality: This script is designed to assess the conservation of amino acid positions across a set of related protein sequences. It automates the process of fetching sequences from NCBI, performing a multiple sequence alignment with MUSCLE, and then calculating a sum-of-pairs score for each column in the alignment. The score is based on the BLOSUM62 substitution matrix, where a higher score for a column indicates a more highly conserved position.
-
-	Input
-	The script requires the following command-line arguments:
+> Input: The script requires the following command-line arguments:
 	
 	input_file: A required text file containing a list of NCBI protein accession numbers, with one accession per line.
 	
