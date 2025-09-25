@@ -16,8 +16,8 @@
 	--phylum_taxid: NCBI Taxonomy ID to restrict BLAST search to a specific phylum
 	--blast_db: Path to a local BLAST database
 	--blast_path: Path to BLAST+ executables
-	Output
-	The script generates a TSV (tab-separated values) file with the following columns:
+
+> Output: The script generates a TSV (tab-separated values) file with the following columns:
 
 	Seed species
 	Common gene symbol of seed sequence
@@ -47,8 +47,8 @@
 	--muscle-path: Path to MUSCLE executable (default: "muscle")
 	--pal2nal-path: Path to pal2nal.pl script (default: "pal2nal.pl")
 	--codeml-path: Path to codeml executable (default: "codeml.exe")
-	Output
-	The script generates several output files:
+
+> Output: The script generates several output files:
 
 	{output}.phy: Codon alignment in PHYLIP format
 	{output}.nwk: Phylogenetic tree in Newick format
@@ -74,8 +74,7 @@
 	
 	The correct file path to the MUSCLE executable on their local machine.
 	
-	Output
-	The script generates two forms of output:
+> Output: The script generates two forms of output:
 	
 	Console Output: A list of sum-of-pairs scores is printed directly to the terminal, with each line showing the column number and its calculated conservation score.
 	
