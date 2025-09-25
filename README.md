@@ -86,7 +86,7 @@ This script is designed to assess the conservation of amino acid positions acros
 	
 	Alignment File: A FASTA file containing the complete multiple sequence alignment. The filename defaults to output.fasta but can be specified with the --output argument.
 
-
+'''
 Dependencies
 	Dependencies List For blastp_ortholog_finder.py
 		Python Packages:
@@ -140,3 +140,4 @@ Dependencies
 			NCBI Access: A valid email address is required for Entrez queries and must be hardcoded into the script.
 	# Install all Python dependencies
 	pip install pandas biopython matplotlib
+'''
