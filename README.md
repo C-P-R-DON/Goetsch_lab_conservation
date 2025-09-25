@@ -1,8 +1,8 @@
-Current progress cosists of four files: blastp_ortholog_finder.py, align_and_tree_for_codeml.py, codeml.ctl, column_scores.py
+> Current progress cosists of four files: blastp_ortholog_finder.py, align_and_tree_for_codeml.py, codeml.ctl, column_scores.py
 
-blastp_ortholog_finder.py - Summary
-Functionality
-This script is designed to find orthologous genes across different species using BLAST searches. It takes a seed gene (nucleotide sequence) as input, finds its protein sequence, and performs BLAST searches to identify orthologs in other species. When there are multiple hits per species, only the best hit is recorded in the output. The script can handle different types of BLAST searches (blastn, tblastn, blastp, blastx, tblastx) and can be configured to search within specific taxonomic groups.
+> blastp_ortholog_finder.py - Summary
+> Functionality
+> This script is designed to find orthologous genes across different species using BLAST searches. It takes a seed gene (nucleotide sequence) as input, finds its protein sequence, and performs BLAST searches to identify orthologs in other species. When there are multiple hits per species, only the best hit is recorded in the output. The script can handle different types of BLAST searches (blastn, tblastn, blastp, blastx, tblastx) and can be configured to search within specific taxonomic groups.
 
 	Input
 	The script requires the following command-line arguments:
