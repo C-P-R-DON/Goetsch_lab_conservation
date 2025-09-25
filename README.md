@@ -100,6 +100,7 @@
   - NCBI BLAST+ tools (if using local BLAST) Download from: https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
   - NCBI Access: Valid email address (required)
   - Optional: NCBI API key (for higher request limits)
+
 **Dependencies List For align_and_tree_for_codeml.py**
 - Python Packages:
 	- argparse (standard library)
@@ -122,6 +123,7 @@
 		- Add to system PATH or provide path via --codeml-path
 	- NCBI Access: Valid email address (required)
 	  	- Optional: NCBI API key (for higher request limits)
+
 **Dependencies List For column_scores.py**
 - Python Packages:
 	- argparse (standard library)
