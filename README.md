@@ -86,53 +86,53 @@
 
 
 ## Dependencies
-Dependencies List For blastp_ortholog_finder.py
-Python Packages:
-- argparse (standard library)
-- sys (standard library)
-- time (standard library)
-- pandas (install with pip install pandas)
-- BioPython (install with pip install biopython)
-- re (standard library)
-- os (standard library)
-- subprocess (standard library)
-External Tools:
-- NCBI BLAST+ tools (if using local BLAST) Download from: https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
-- NCBI Access: Valid email address (required)
-- Optional: NCBI API key (for higher request limits)
-Dependencies List For align_and_tree_for_codeml.py
-Python Packages:
-- argparse (standard library)
-- os (standard library)
-- sys (standard library)
-- subprocess (standard library)
-- time (standard library)
-- tempfile (standard library)
-- io (standard library)
-- BioPython (install with pip install biopython)
-- matplotlib (install with pip install matplotlib)
-External Tools:
-- MUSCLE (for multiple sequence alignment) Download from: https://www.drive5.com/muscle/downloads.htm
-  Add to system PATH or provide path via --muscle-path
-- pal2nal.pl (for codon alignment) Download from: http://www.bork.embl.de/pal2nal/
-		Requires Perl to be installed
-		Add to system PATH or provide path via --pal2nal-path
-- PAML (for dN/dS calculation) Download from: http://abacus.gene.ucl.ac.uk/software/paml.html
-		Specifically requires codeml executable
-		Add to system PATH or provide path via --codeml-path
-- NCBI Access: Valid email address (required)
-  	Optional: NCBI API key (for higher request limits)
-Dependencies List For column_scores.py
-Python Packages:
-- argparse (standard library)
-- os (standard library)
-- sys (standard library)
-- subprocess (standard library)
-- tempfile (standard library)
-- BioPython (install with pip install biopython)
-- numpy (install with pip install numpy)
-External Tools:
-- MUSCLE (for multiple sequence alignment)
-		Download from: https://www.drive5.com/muscle/downloads.htm
-		The path to the executable must be hardcoded into the script.
-- NCBI Access: A valid email address is required for Entrez queries and must be hardcoded into the script.
+**Dependencies List For blastp_ortholog_finder.py**
+- Python Packages:
+  - argparse (standard library)
+  - sys (standard library)
+  - time (standard library)
+  - pandas (install with pip install pandas)
+  - BioPython (install with pip install biopython)
+  - re (standard library)
+  - os (standard library)
+  - subprocess (standard library)
+- External Tools:
+  - NCBI BLAST+ tools (if using local BLAST) Download from: https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
+  - NCBI Access: Valid email address (required)
+  - Optional: NCBI API key (for higher request limits)
+**Dependencies List For align_and_tree_for_codeml.py**
+- Python Packages:
+	- argparse (standard library)
+	- os (standard library)
+	- sys (standard library)
+	- subprocess (standard library)
+	- time (standard library)
+	- tempfile (standard library)
+	- io (standard library)
+	- BioPython (install with pip install biopython)
+	- matplotlib (install with pip install matplotlib)
+- External Tools:
+	- MUSCLE (for multiple sequence alignment) Download from: https://www.drive5.com/muscle/downloads.htm
+	  Add to system PATH or provide path via --muscle-path
+	- pal2nal.pl (for codon alignment) Download from: http://www.bork.embl.de/pal2nal/
+			- Requires Perl to be installed
+			- Add to system PATH or provide path via --pal2nal-path
+	- PAML (for dN/dS calculation) Download from: http://abacus.gene.ucl.ac.uk/software/paml.html
+			- Specifically requires codeml executable
+			- Add to system PATH or provide path via --codeml-path
+	- NCBI Access: Valid email address (required)
+	  	- Optional: NCBI API key (for higher request limits)
+**Dependencies List For column_scores.py**
+- Python Packages:
+	- argparse (standard library)
+	- os (standard library)
+	- sys (standard library)
+	- subprocess (standard library)
+	- tempfile (standard library)
+	- BioPython (install with pip install biopython)
+	- numpy (install with pip install numpy)
+- External Tools:
+	- MUSCLE (for multiple sequence alignment)
+			- Download from: https://www.drive5.com/muscle/downloads.htm
+			- The path to the executable must be hardcoded into the script.
+	- NCBI Access: A valid email address is required for Entrez queries and must be hardcoded into the script.
