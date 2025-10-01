@@ -2,7 +2,7 @@
 
 ## blastp_ortholog_finder.py - Summary
 
-> Functionality: This script is designed to find orthologous genes across different species using BLAST searches. It takes a seed gene (nucleotide sequence) as input, finds its protein sequence, and performs BLAST searches to identify orthologs in other species. When there are multiple hits per species, only the best hit is recorded in the output. The script can handle different types of BLAST searches (blastn, tblastn, blastp, blastx, tblastx) and can be configured to search within specific taxonomic groups.
+> Functionality: This script is designed to find orthologous genes across different species using BLAST searches. It takes a seed gene (nucleotide sequence) as input, finds its protein sequence, and performs BLAST searches to identify potential orthologs in other species. When there are multiple hits per species, only the best hit is recorded in the output. The script can handle different types of BLAST searches (blastn, tblastn, blastp, blastx, tblastx) and can be configured to search within specific taxonomic groups.
 
 > Input: The script requires the following command-line arguments:
 
